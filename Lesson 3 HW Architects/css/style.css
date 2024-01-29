@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Verdana;
+    src: url("../fonts/Verdana.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI-Bold.ttf");
+    font-weight: bold;
+}
+
+:root {
+    --first-color: orange;
+    --second-color: red;
+    --third-color: purple;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1545px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.header {
+    max-width: 1564px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    display: block;
+}
+
+.header__title {
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__title b {
+    font-size: 36px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 4px;
+    background-color: #000;
+    opacity: 0.75;
+    padding: 8px 16px;
+}
+
+.form {
+    max-width: 1564px;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+
+.line {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 16px 0px;
+    border-bottom: 1px solid #ccc;
+    border-color: #f1f1f1;
+    margin: 15px;
+    display: block;
+}
+
+.galery { 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0 8px;
+}
+
+.galery img {
+ width: calc(25% - 10px); /* Устанавливаем ширину картинок в 25% ширины контейнера с учетом промежутка */
+ margin-bottom: 10px; 
+}
+
+.gallery img:nth-child(4n) {
+    margin-right: 0;
+}
+
+.gallery img:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/* Не получется у меня разместить текст на картинку */
+/* .text__inside {
+    position: relative;
+    display: inline-block;
+
+}
+
+.text_overlay {
+    position: absolute;
+    background-color: #000;
+    padding: 10px;
+    color: white;
+    top: 0;
+    left: 0;
+
+} */
+
+.galery_2 {
+    display: flex;
+    margin: 10px 0;
+}
+
+.galery2__sername img {
+width: 100%;
+height: auto;
+
+}
+
+.galery2__sername {
+    padding: 0 8px;
+    width: calc(25% - 10px);
+    margin-bottom: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+h5 {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.60;
+    margin: 16px 0;
+}
+
+.galery2__button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    /* align-items: center; я не понимаю, почему не выравнивает по центру */  
+}
+
+.galery2__button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.registration p{
+    margin: 15px 0;
+}
+
+input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    border: 0;
+    text-decoration: none;
+    margin: 16px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.last_pict {
+    display: block;
+    /* margin: auto; */
+    width: 100%;
+}
+
+footer {
+    padding: 16px 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.w3_hover_text_green {
+    color: #fff;
+}
+
+.w3_hover_text_green:hover {
+    color: green;
+}
